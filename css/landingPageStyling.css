@@ -1,0 +1,61 @@
+/********************************BOT Landing Page Styling*************************/
+/********************************Headers*************************/
+h1 {
+    font-family: 'Monoton', cursive, sans-serif;
+    text-align: center;
+}
+p {
+    font-family: 'Comfortaa', cursive, sans-serif;
+    text-align: center;
+}
+.welcome-text h1, .welcome-text p{
+    color:white;
+}
+/********************************Log-in*************************/
+.login{
+    font-family: 'Comfortaa', cursive, sans-serif;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em 5em 5em 5em;
+    display:flex;
+    justify-content: center;
+}
+.login:hover {
+    transition: all 2s ease 0s;
+    background-color: rgba(255, 159, 159, 0.1);
+}
+.login form{
+    transition: all 2s ease 0s;
+    width: 75%;
+    text-align: center;
+    color:black;
+}
+.login form a{
+    text-decoration: none;
+    color:black;
+}
+.login input{
+    margin: 0.5em 0em 0.5em 0em;
+}
+#sign-in-button {
+    margin-top:1em;
+}
+/*Used to override the background on login page*/ 
+body{
+    /* Background image credit GIPHY user : Clayton Schonwiler */
+    background-image:url("../images/bgGIf2.gif");
+    background-position: center;
+    background-repeat: repeat-x;
+}
+/*
+000500 black
+dee5et plat
+9dc5bb cambridege blu
+17b890 meadow green
+5e807f winterdream green
+font-family: 'Permanent Marker', cursive;
+font-family: 'Modak', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Comfortaa', cursive;
+
+*/

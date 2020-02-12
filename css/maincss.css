@@ -1,0 +1,19 @@
+/*CSS for BagOfTricks.com - A COSC 360 Project - Thomas Van De Crommenacker*/
+/********************************Basic Page Styling*************************/
+header {
+    margin-bottom: 4.5em;
+}
+nav {
+    opacity: 0.85;
+    font-family: 'Comfortaa', cursive, sans-serif;
+}
+footer{
+    display:flex;
+    justify-content: center;
+}
+main {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+

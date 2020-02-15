@@ -10,7 +10,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="author" content="Thomas Van De Crommenacker">
 
-    <title>Starter Template · Bootstrap</title>
+    <title>· BOT · Register ·</title>
 
     <!--Bootstrap related CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,25 +29,26 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <!--My JavaScript-->
+    <script src="../js/validation.js"></script>
+
     <!--My CSS and Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Modak|Monoton|Permanent+Marker&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/maincss.css">
-    <link rel="stylesheet" href="../css/basicPortfolioStyling.css">
+    <link rel="stylesheet" href="../css/registrationPageStyling.css">
 
 </head>
 
 <body>
-    <header class="main-header">
+    <header id="main-header">
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-
+            <a class="navbar-brand" href="#">·B·O·T·</a>
             <!--Nav Toggle-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!--Main nav-bar body-->
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
@@ -55,10 +56,7 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Browse</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Register</a>
+                        <a class="nav-link" href="registrationPage.html" tabindex="-1" aria-disabled="true">Register</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
@@ -66,22 +64,9 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
 
                             <!--Change dynamically depending on user login, My PortFolio, Account settings etc-->
-                            <a class="dropdown-item" href="#">My Portfolio</a>
-                            <a class="dropdown-item" href="#">Account Settings</a>
-                            <a class="dropdown-item" href="#">Forum</a>
-                            <a class="dropdown-item" href="#">Categories</a>
-                        </div>
-                    </li>
-                    <li id="edit-layout-dropdown" class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Edit Layout</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown02">
-
-                            <!--Generate JavaScript to prompt for input, then store info and add to page-->
-                            <a class="dropdown-item" href="#">+ Text Module</a>
-                            <a class="dropdown-item" href="#">+ Image</a>
-                            <a class="dropdown-item" href="#">+ Video</a>
-                            <a class="dropdown-item" href="#">+ Layout</a>
+                            <a class="dropdown-item" href="#">· Register ·</a>
+                            <a class="dropdown-item" href="#">· Forum ·</a>
+                            <a class="dropdown-item" href="#">· Categories ·</a>
                         </div>
                     </li>
                 </ul>
@@ -94,10 +79,25 @@
             </div>
         </nav>
     </header>
+    <main role="main" class="container-login">
+        <!--TODO : Create logo-->
+        <div class="login">
+            <form class="form-signin" id="registration-form">
+                <!--Image ?-->
 
-    <main role="main" class="container-portfolio">
-        <div class="main-banner-portfolio">
-
+                <input type=" email" id="inputEmail" class="form-control" onchange="javascript:validateEmail(this.value)" placeholder="Email address" required
+                    autofocus>
+                <input type="password" id="inputPassword" class="form-control" onchange="javascript:validatePW(this.value)" placeholder="Password" required>
+                <input type="password" id="inputConfirmPassword" class="form-control" onchange="javascript:validateConfirmPW(this.value)" placeholder="Confirm Password"
+                    required>
+                <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required>
+                <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
+                <input type="text" id="inputEducation" class="form-control" placeholder="Education" required>
+                <input type="text" id="inputJob" class="form-control" placeholder="Job" required>
+                <label for="robotCheck" id="robotCheckBoxLabel">Not a Robot?</label>
+                <input type="checkbox" id="robotCheck" class="form-control" required>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block" type="submit">SUBMIT</button>
+            </form>
         </div>
     </main>
     <footer>

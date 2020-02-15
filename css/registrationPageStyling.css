@@ -1,72 +1,54 @@
-/********************************BOT Landing Page Styling*************************/
+/********************************BOT registration Page Styling*************************/
 /********************************Headers*************************/
 h1 {
     font-family: 'Monoton', cursive, sans-serif;
     text-align: center;
 }
-
 p {
     font-family: 'Comfortaa', cursive, sans-serif;
     text-align: center;
 }
-
-.welcome-text h1,
-.welcome-text p {
-    color: white;
+#main-header {
+    margin-bottom: 4em;
 }
-
-/********************************Log-in*************************/
-.login {
+/****************************Same as Log-in page-minor differences*************************/
+.login{
     font-family: 'Comfortaa', cursive, sans-serif;
     border-radius: 1em;
-    padding: 2em;
-    margin: 2em 5em 5em 5em;
-    display: flex;
+    margin:2.5em;
+    display:flex;
     justify-content: center;
 }
-
+#robotCheckBoxLabel {
+    color:white;
+}
 .login:hover {
     transition: all 2s ease 0s;
     background-color: rgba(255, 159, 159, 0.1);
 }
-
 .login input {
     text-align: center;
 }
-
-.login form {
+.login form{
     transition: all 2s ease 0s;
     width: 50%;
     text-align: center;
-    color: black;
+    color:black;
 }
-
-.login form a {
+.login form a{
     text-decoration: none;
-    color: black;
+    color:black;
 }
-
-.login input {
+.login input{
     margin: 0.5em 0em 0.5em 0em;
 }
-
 #sign-in-button {
-    margin-top: 1em;
+    margin-top:1em;
 }
-
-/*Used to override the background on login page*/
-body {
+/*Used to override the background on page*/ 
+body{
     /* Background image credit GIPHY user : Clayton Schonwiler */
-    background-image: url("../images/bgGIf2.gif");
+    background-image:url("../images/bgGIf2.gif");
     background-position: center;
     background-repeat: repeat-x;
-}
-
-/**************************About*********************************/
-.about {
-    margin-top:10em;
-}
-.about-header {
-    font-family: 'Monoton', cursive, sans-serif;
-    text-align: center;
 }

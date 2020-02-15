@@ -10,7 +10,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="author" content="Thomas Van De Crommenacker">
 
-    <title>· Welcome ·</title>
+    <title>· BOT · Welcome ·</title>
 
     <!--Bootstrap related CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,6 +29,9 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <!--My JavaScript-->
+    <script src="../js/validation.js"></script>
+
     <!--My CSS and Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Modak|Monoton|Permanent+Marker&display=swap"
         rel="stylesheet">
@@ -40,7 +43,7 @@
 <body>
     <header class="main-header">
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">B.O.T</a>
+            <a class="navbar-brand" href="#">·B·O·T·</a>
             <!--Nav Toggle-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +59,7 @@
                         <a class="nav-link" href="#">Browse</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Register</a>
+                        <a class="nav-link" href="registrationPage.html" tabindex="-1" aria-disabled="true">Register</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
@@ -64,9 +67,9 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
 
                             <!--Change dynamically depending on user login, My PortFolio, Account settings etc-->
-                            <a class="dropdown-item" href="#">Register</a>
-                            <a class="dropdown-item" href="#">Forum</a>
-                            <a class="dropdown-item" href="#">Categories</a>
+                            <a class="dropdown-item" href="#">· Register ·</a>
+                            <a class="dropdown-item" href="#">· Forum ·</a>
+                            <a class="dropdown-item" href="#">· Categories ·</a>
                         </div>
                     </li>
                 </ul>
@@ -90,12 +93,14 @@
         <div class="login">
             <form class="form-signin">
                 <!--Image ?-->
-                <input type=" email" id="inputEmail" class="form-control" placeholder="Email address" required
+                <input type="email" onchange="javascript:validateEmail(this.value)" id="inputEmail" class="form-control" placeholder="Email address" required
                     autofocus>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <input type="password" onchange="javascript:validatePW(this.value)" id="inputPassword" class="form-control" placeholder="Password" required>
                 <button id="sign-in-button" class="btn btn-lg btn-light btn-block" type="submit">Sign in</button>
-                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a href="#">Register</a></button>
-                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a href="#">What Is This Place?</a></button>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a
+                        href="registrationPage.html">Register</a></button>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a href="#">What Is This
+                        Place?</a></button>
             </form>
         </div>
     </main>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="COSC 360 Project 1 Deliverable">
+
+    <!--Credit for Bootstrap Creators-->
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Thomas Van De Crommenacker">
+
+    <title>· BOT · Thom's Portfolio ·</title>
+
+    <!--Bootstrap related CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
+    <!--Bootstrap related JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!--My CSS and Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Modak|Monoton|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/maincss.css">
+    <link rel="stylesheet" href="../css/basicPortfolioStyling.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">·B·O·T·</a>
+
+            <!--Nav Toggle-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Main nav-bar body-->
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item-active">
+                        <a class="nav-link" href="portfolio_sample_editing.html" tabindex="-1" aria-disabled="true">Edit Portfolio</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Menu</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+
+                            <!--Change dynamically depending on user login, My PortFolio, Account settings etc-->
+                            <a class="dropdown-item" href="#">· My Portfolio ·</a>
+                            <a class="dropdown-item" href="#">· Account Settings ·</a>
+                            <a class="dropdown-item" href="#">· Forum ·</a>
+                            <a class="dropdown-item" href="#">· Categories ·</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Log Out</a>
+                    </li>
+                </ul>
+
+                <!--Nav Bar Search Box-->
+                <form class="form-inline my-2 my-lg-0" method="POST" action="#">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+  
+    <main role="main" class="main-container-portfolio">
+
+        <div class="main-banner-portfolio">
+            <figure>
+                <img src="../images/sampleBanner.png" alt="Sample Banner">
+            </figure>
+        </div>
+
+        <div class="main-body-portfolio">
+            <section class="profile-information">
+                <article id="profile-picture">
+                    <figure>
+                        <img src="../images/placeholderProfile.jpg" alt="Sample Profile Pic">
+                        <figcaption id="userName">
+                            Thom Van De Crommenacker
+                        </figcaption>
+                </article>
+
+                <!-- This should be editable as well as auto populate based on information the user gives during registration-->
+                <article id="profile-description">
+                    <a href="#"><button class="btn btn-secondary my-2 my-sm-0">Résumé - CV</button></a>
+                    <br>
+                    <p><strong>Education:</strong> University of British Columbia Okanagan</p>
+                    <p>Computer Science Student - Co-op</p>
+                    <br>
+                    <p><strong>Job:</strong> Software Developer</p>
+                    <br>
+                    <p><strong>GitHub:</strong> GitHub.com/ThomPetrus</p>
+                    <br>
+                    <p><strong>Brief Summary: </strong>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                        , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut
+                        aliquid
+                    </p>
+                </article>
+                </figure>
+
+            </section>
+            <section class="user-content-main-column">
+                <article>
+                    <h2 class="user-content-header">Overwatch</h2>
+                    <figure>
+                        <img src="../images/anaImage.png" alt="project 1 overwatch">
+                    </figure>
+                    <p class="user-content-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                        velit
+                        , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat
+                        voluptatem.
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam,
+                        nisi ut
+                        aliquid
+                    </p>
+                </article>
+                <article>
+                    <h2 class="user-content-header">This Very Wesbite!</h2>
+                    <figure>
+                        <img src="../images/webSite.png" alt="project 2 website">
+                    </figure>
+                    <p class="user-content-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci
+                        velit
+                        , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat
+                        voluptatem.
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam,
+                        nisi ut
+                        aliquid
+                    </p>
+                </article>
+                <article>
+                    <h2 class="user-content-header">Overwatch</h2>
+                    <figure>
+                        <video width="320" height="240" controls>
+                            <source src="../images/sampleVid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </figure>
+                    <p class="user-content-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci
+                        velit
+                        , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat
+                        voluptatem.
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam,
+                        nisi ut
+                        aliquid
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+
+    <section class="footer-related-posts">
+        <h2 class="footer-related-posts-header">Related Posts</h2>
+        <article class="footer-related-posts-images">
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+        </article>
+    </section>
+
+    <footer>
+        <section class="footer-info-section">
+            <h2>Impressed with this portfolio? Get in touch!</h2>
+            <p><strong>Email:</strong> tpvandecrommenacker@gmail.com</p>
+            <p><strong>Phone:</strong> +1-000-000-0000</p>
+            <p>&copy; Copyright - Thomas Van De Crommenacker - February 2020</p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="COSC 360 Project 1 Deliverable">
+
+    <!--Credit for Bootstrap Creators-->
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Thomas Van De Crommenacker">
+
+    <title>· BOT · Forum </title>
+
+    <!--Bootstrap related CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
+    <!--Bootstrap related JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!--My CSS and Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Modak|Monoton|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/maincss.css">
+    <link rel="stylesheet" href="../css/forumStyling.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">·B·O·T·</a>
+
+            <!--Nav Toggle-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Main nav-bar body-->
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio_sample_not_editing.html" tabindex="-1"
+                            aria-disabled="true">My Portfolio</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Menu</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+
+                            <!--Change dynamically depending on user login, My PortFolio, Account settings etc-->
+                            <a class="dropdown-item" href="#">· My Portfolio ·</a>
+                            <a class="dropdown-item" href="#">· Account Settings ·</a>
+                            <a class="dropdown-item" href="#">· Forum ·</a>
+                            <a class="dropdown-item" href="#">· Categories ·</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Log Out</a>
+                    </li>
+                </ul>
+
+                <!--Nav Bar Search Box-->
+                <form class="form-inline my-2 my-lg-0" method="POST" action="#">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--Will be changed to use JS to display the box-->
+    <aside class="edit-buttons">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Software Development</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Art</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Education</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Music</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Business</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Finance</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Jobs</button>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Others</button>
+    </aside>
+    <main role="main" class="main-container-forum">
+
+        <!--Create logo ? / Banner-->
+        <div class="welcome-text">
+            <h1>Bag Of Tricks · Forum</h1>
+            <h1>Current Category: Software Development</h1>
+        </div>
+
+        <div class="main-body-forum">
+
+            <section class="user-content-main-column">
+                <article class="forum-user-post">
+                    <h2 class="user-content-header">Hey Ya'll Question about Working at Microsoft?</h2>
+                    <figure>
+                        <img src="../images/msLogo.png" alt="user-post-1">
+                    </figure>
+                    <p class="user-content-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                        velit
+                        , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat
+                        voluptatem.
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam,
+                        nisi ut
+                        aliquid
+                    </p>
+                </article>
+                <div class="welcome-text">
+                    <h1>Comments</h1>
+                </div>
+                <article class="forum-comment-section">
+                    <div class="forum-comment-body">
+                        <figure class="forum-comment-image">
+                            <img src="../images/msPost.png" alt="user-comment-image">
+                        </figure>
+                        <h2 class="forum-user-name"><strong>User Name: Thom Van De Crommenacker</strong><h2>
+                                <p class="forum-comment-text">
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                    quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci
+                                    velit
+                                    , sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                                    quaerat
+                                    voluptatem.
+                                </p>
+                    </div>
+                    <div class="forum-comment-body">
+                        <h2 class="forum-user-name"><strong>User Name: Jim Bob</strong><h2>
+                                <p class="forum-comment-text">
+                                    What Thom Said!
+                                </p>
+                    </div>
+                    <div class="forum-comment-body">
+                        <h2 class="forum-user-name"><strong>User Name: Mohammed Smith</strong><h2>
+                                <p class="forum-comment-text">
+                                    accusantium doloremque laudantium, totam rem aperiam,
+                                    eaque ipsa quae
+                                    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed.
+                                </p>
+                    </div>
+                    <div class="forum-comment-body">
+                        <h2 class="forum-user-name"><strong>User Name: Vitalik Buterin</strong><h2>
+                                <p class="forum-comment-text">
+                                    I disagree. Check out Ethereum dough.
+                                </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+
+    <section class="footer-related-posts">
+        <h2 class="footer-related-posts-header">Related Posts</h2>
+        <article class="footer-related-posts-images">
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+            <figure>
+                <img src="../images/relatedPosts.png" alt="" />
+            </figure>
+        </article>
+    </section>
+
+    <footer>
+        <section class="footer-info-section">
+           
+            <p>&copy; Copyright - Thomas Van De Crommenacker - February 2020</p>
+        </section>
+    </footer>
+</body>
+
+</html>

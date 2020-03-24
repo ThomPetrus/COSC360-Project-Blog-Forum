@@ -1,4 +1,8 @@
-/*JavaScript Example of email and password verification - Phase 1 COSC 360 - 33970138*/
+/*
+JavaScript Example of email and password verification - Phase 1 COSC 360 - 33970138
+
+Pre-jQuery - TODO : Rewrite if time allows.
+*/
 
 
 /*
@@ -104,3 +108,12 @@ function validateEmail(email) {
         header.style.marginBottom = "7em";
     }
 }
+
+
+$(document).ready(function () {
+    // Clear form on window load
+    $('#registration-form').find("input[type=text], textarea").val("");
+    $('#registration-form').find("input[type=password], textarea").val("");
+    $('#registration-form').find("input[type=email], textarea").val("");
+
+});

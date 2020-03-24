@@ -10,7 +10,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="author" content="Thomas Van De Crommenacker">
 
-    <title>· BOT · Register ·</title>
+    <title>· BOT · Welcome ·</title>
 
     <!--Bootstrap related CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -32,16 +32,26 @@
     <!--My JavaScript-->
     <script src="../js/validation.js"></script>
 
+    <!-- jQuery and Related JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="../js/jquery-3.4.1.min.js"><\/script>')
+    </script>
+
+    <script type="text/javascript" src="../js/jquery-360.js"></script>
+
+
     <!--My CSS and Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Modak|Monoton|Permanent+Marker&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/maincss.css">
-    <link rel="stylesheet" href="../css/registrationPageStyling.css">
+    <link rel="stylesheet" href="../css/landingPageStyling.css">
 
 </head>
 
 <body>
-    <header id="main-header">
+    <header class="main-header">
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">·B·O·T·</a>
             <!--Nav Toggle-->
@@ -54,6 +64,9 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Browse</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="registrationPage.html" tabindex="-1" aria-disabled="true">Register</a>
@@ -80,23 +93,26 @@
         </nav>
     </header>
     <main role="main" class="container-login">
+
+        <div class="welcome-text">
+            <h1>Welcome to Bag Of Tricks</h1>
+            <p><i>Showcase Your Skills</i></p>
+        </div>
+
         <!--TODO : Create logo-->
         <div class="login">
-            <form class="form-signin" id="registration-form">
+            <form class="form-signin" method="POST" action="../resources/login.php">
                 <!--Image ?-->
-
-                <input type=" email" id="inputEmail" class="form-control" onchange="javascript:validateEmail(this.value)" placeholder="Email address" required
-                    autofocus>
-                <input type="password" id="inputPassword" class="form-control" onchange="javascript:validatePW(this.value)" placeholder="Password" required>
-                <input type="password" id="inputConfirmPassword" class="form-control" onchange="javascript:validateConfirmPW(this.value)" placeholder="Confirm Password"
-                    required>
-                <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required>
-                <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
-                <input type="text" id="inputEducation" class="form-control" placeholder="Education" required>
-                <input type="text" id="inputJob" class="form-control" placeholder="Job" required>
-                <label for="robotCheck" id="robotCheckBoxLabel">Not a Robot?</label>
-                <input type="checkbox" id="robotCheck" class="form-control" required>
-                <button id="sign-in-button" class="btn btn-lg btn-light btn-block" type="submit">SUBMIT</button>
+                <input type="email" onchange="javascript:validateEmail(this.value)" id="inputEmail" name="email"
+                    class="form-control" placeholder="Email address" required autofocus>
+                <input type="password" onchange="javascript:validatePW(this.value)" id="inputPassword" name="password"
+                    class="form-control" placeholder="Password" required>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block" type="submit" value="submit" name="submit">Sign
+                    in</button>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a
+                        href="registrationPage.html">Register</a></button>
+                <button id="sign-in-button" class="btn btn-lg btn-light btn-block"><a href="#">What Is This
+                        Place?</a></button>
             </form>
         </div>
     </main>

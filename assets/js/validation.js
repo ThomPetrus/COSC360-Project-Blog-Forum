@@ -1,7 +1,11 @@
 /*
     JavaScript Example of email and password verification - Phase 1 COSC 360 - 33970138
 
-    Pre-jQuery - TODO : Will Rewrite if time allows.
+    
+    NOTE:
+    
+    
+    Pre-jQuery - Will Rewrite if time allows.
 
 */
 
@@ -15,11 +19,12 @@
     can refrain from using any further bootstrap if it is any issue.
 */
 
+
 function validatePW(pw) {
     var button = document.getElementById("sign-in-button");
     var box = document.getElementById("pw");
-    var header = document.getElementById("main-header");
-
+    var msg = document.getElementById("js-msg");
+    
     var validLength = false;
     var hasSymbol = false;
     var hasNumber = false;
@@ -29,7 +34,7 @@ function validatePW(pw) {
         box.style.backgroundColor = "rgb(255,0,0, 0.25)";
         document.getElementById("registration-form").reset();
         button.hidden = true;
-        header.style.marginBottom = "7em";
+
     } else {
 
         validLength = true;
@@ -64,7 +69,7 @@ function validatePW(pw) {
     if (validLength && hasNumber && hasSymbol) {
         box.style.backgroundColor = "rgb(255,255,255)";
         button.hidden = false;
-        header.style.marginBottom = "4em";
+       
     }
 }
 
@@ -72,17 +77,16 @@ function validateConfirmPW(pw) {
     var button = document.getElementById("sign-in-button");
     var box = document.getElementById("confirmPw");
     var firstPW = document.getElementById("pw").value;
-    var header = document.getElementById("main-header");
 
     if (firstPW != pw) {
         alert("Passwords don't match!");
         box.style.backgroundColor = "rgb(255,0,0, 0.25)";
         button.hidden = true;
-        header.style.marginBottom = "7em";
+      
     } else {
         box.style.backgroundColor = "rgb(255,255,255)";
         button.hidden = false;
-        header.style.marginBottom = "4em";
+        
     }
 }
 
@@ -90,7 +94,7 @@ function validateEmail(email) {
     var box = document.getElementById("email");
     var verifiedEmails = ['outlook.', 'gmail.', 'hotmail.', 'msn', 'ubc.mail.', 'shaw.', 'telus.'];
     var button = document.getElementById("sign-in-button");
-    var header = document.getElementById("main-header");
+   // var header = document.getElementById("main-header");
 
     var valid = false;
     for (var i = 0; i < verifiedEmails.length; i++) {
@@ -101,12 +105,12 @@ function validateEmail(email) {
     if (valid) {
         box.style.backgroundColor = "rgb(255,255,255)";
         button.hidden = false;
-        header.style.marginBottom = "4em";
+       // header.style.marginBottom = "4em";
     } else {
         alert("Enter a valid Email!");
         box.style.backgroundColor = "rgb(255,0,0, 0.25)";
         button.hidden = true;
-        header.style.marginBottom = "7em";
+      //  header.style.marginBottom = "7em";
     }
 }
 

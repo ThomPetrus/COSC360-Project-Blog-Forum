@@ -4,10 +4,11 @@ class Bootstrap{
     private $action;
     private $request;
 
+    // In main index.php the constructor is called with $_GET 
     public function __construct($request){
         $this->request = $request;
-
-        // If no controller sepcified - i.e at root then set controller to home
+        
+        // If no controller specified - i.e at root then set controller to home
         if($this->request['controller'] == ""){
             $this->controller = 'home';
         } else{
@@ -44,6 +45,10 @@ class Bootstrap{
             echo '<h1>Controller class not found.</h1>';
             return;
         }
+    }
+
+    public function getController(){
+        return $this->controller;
     }
 }
 ?>

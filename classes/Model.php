@@ -45,6 +45,11 @@ abstract class Model {
     public function last_insert_id(){
         return $this->db_handler->lastInsertId();
     }
+
+    public function singleResult(){
+        $this->execute();
+        return $this->stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>

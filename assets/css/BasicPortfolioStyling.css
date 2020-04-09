@@ -1,43 +1,4 @@
-/************************Basic Forum styling****************************/
-
-img{
-    max-width:33%;
-}
-
-.main-container-forum article {
-    margin:1.5em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.35);
-}
-
-.main-container-forum a:hover {
-    background-color: #dee5ef;
-    transition: all 1s ease 0s;
-    border-radius: 0.75em;
-}
-.main-container-forum a {
-    text-decoration: none;
-    color:black;
-}
-
-.forum-comment-body {
-    padding:0.5em;
-    margin:1.5em;
-    border-radius: 0.5em;
-    background-color: #e6edf7;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    display:flex;
-    flex-direction:column;
-    justify-content: flex-start;
-}
-
-.forum-user-name{
-    border-bottom: 2pt solid rgba(255, 100, 11, 0.4);
-}
-
-#categories-panel{
-    margin:1em;
-}
+/************************Basic portfolio styling****************************/
 
 /******************Small Screen******************/
 @media only screen and (max-width: 1000px) {
@@ -46,19 +7,6 @@ img{
     h1 {
         font-family: 'Monoton', cursive, sans-serif;
         text-align: center;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .main-banner-portfolio {
-        visibility: hidden;
-    }
-
-    img {
-        max-width: 100%;
     }
 
     /************************Edit Mode****************************/
@@ -93,15 +41,27 @@ img{
         align-self: center;
     }
 
-    .profile-information #userName{
+    .profile-information #userName {
         text-align: center;
         margin: 0.5em;
         font-size: 1.2em;
     }
 
+    .portfolio-btn {
+        width:50%;
+        margin: 1em;
+        border-radius: 0.5em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        background-color: #B7C299;
+    }
+
     #profile-picture img {
         border-radius: 0.5em;
         border: 2pt solid rgba(255, 100, 11, 0.4);
+    }
+
+    .portfolio-post-img {
+        max-width:50%;
     }
 
     .user-content-main-column figure {
@@ -135,6 +95,89 @@ img{
 
 /****************Large Screen*********************/
 @media only screen and (min-width:1000px) {
+
+    
+    .portfolio-post-img {
+        max-width:50%;
+    }
+
+    .portfolio-profile {
+        align-content: center;
+        justify-content: center;
+        padding:1em;
+    }
+
+    .profile-picture{
+        margin:1em;
+    }
+    .portfolio-btn {
+        width:50%;
+        margin: 1em;
+        border-radius: 0.5em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        background-color: #B7C299;
+    }
+
+    /**index**/
+    .portfolio-search-bar {
+        width: 100%;
+        align-content: center;
+    }
+
+    .portfolio-index-panel a {
+        margin: 1em;
+    }
+
+    .search-bar-btn:hover {
+        background-color: #dee5ef;
+        transition: all 0.5s ease 0s;
+        border-radius: 0.75em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .search-bar-btn {
+        width: 100%;
+        margin: 0.5em;
+        border-radius: 0.5em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        background-color: #B7C299;
+    }
+
+    /** Search results **/
+    .search-results-container {
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        padding:0.5em;
+        border-radius:0.5em;
+    }
+    .carousel, .carousel-image {
+        height:640px;
+        width:100%;
+    }
+    .search-results-table {
+        margin:1em;
+        width:85%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius:1em;
+    }
+
+    .search-results-table td{
+        padding:1.5em;
+    }
+
+    .search-results-table th{
+        border:none;
+    }
+
+    /** Portfolio Page **/
+
+    .carousel-image img{
+        width:100%;
+        height:100%;
+    }
+
     h1 {
         font-family: 'Monoton', cursive, sans-serif;
         text-align: center;
@@ -160,28 +203,64 @@ img{
     }
 
     /************************Body of user content****************************/
-    .main-banner-forum {
+    .main-banner-portfolio {
         display: flex;
         justify-content: flex-start;
         margin: 1em 0em 1em 0em;
     }
 
-    .main-banner-forum figure {
+    .main-banner-portfolio figure {
         overflow: hidden;
     }
 
-    .main-container-forum {
+    .main-container-portfolio {
         display: flex;
         justify-content: flex-start;
     }
 
+    .main-container-portfolio section {
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.35);
+    }
 
-
-    .main-body-forum {
+    .main-body-portfolio {
         display: flex;
         flex-direction: row;
         margin: 1em;
         padding: 1em;
+    }
+
+    .profile-information {
+        width: 33%;
+        background-color: white;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+
+    .profile-information button {
+        width: 100%;
+        margin: 1em 0em 1em 0em;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+
+    .profile-information #userName {
+        text-align: center;
+        margin: 0.5em;
+        font-size: 1.2em;
+    }
+
+    #profile-description p {
+        margin: 0.5em;
+    }
+
+    #profile-description {
+        background-color: white;
+        border-radius: 0.5em;
+    }
+
+    #profile-picture img {
+        border-radius: 0.5em;
+        border: 2pt solid rgba(255, 100, 11, 0.4);
     }
 
     .user-content-main-column {
@@ -209,7 +288,7 @@ img{
         font-size: 1.2em;
         margin: 1em;
         font-family: 'Monoton', cursive, sans-serif;
-        border-bottom:2pt solid rgba(255, 100, 11, 0.4);
+        border-bottom: 2pt solid rgba(255, 100, 11, 0.4);
     }
 
     .user-content-main-column article {
@@ -237,7 +316,7 @@ img{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        padding:1em;
+        padding: 1em;
     }
 
     .footer-related-posts-header {
@@ -248,9 +327,8 @@ img{
 
     .footer-info-section {
         width: 100%;
-        padding:1em;
+        padding: 1em;
         text-align: center;
         border-top: 1pt solid rgba(255, 100, 11, 0.4);
     }
-
 }

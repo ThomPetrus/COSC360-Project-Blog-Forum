@@ -1,6 +1,6 @@
-<div class="panel panel-default">
+<div class="panel panel-default forum-content-container">
     <div class="panel-heading">
-        <h3 class="panel-title">Register</h3>
+        <h3 class="lead">·Register·</h3>
     </div>
     <div class="panel-body">
         <form method="POST" action="<?php $_SERVER['PHP_SELF']?>" enctype="multipart/form-data">
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <input type="text" name="job" class="form-control" placeholder="Job" required />
             </div>
-            <input class="btn btn-primary" id="sign-in-button" name="submit" type="submit" value="Register" />
+            <input class="btn btn-secondary login-button" id="sign-in-button" name="submit" type="submit" value="·REGISTER·" />
         </form>
     </div>
 </div>

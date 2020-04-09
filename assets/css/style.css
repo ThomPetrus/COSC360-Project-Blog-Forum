@@ -1,5 +1,12 @@
 /*CSS for BagOfTricks.com - A COSC 360 Project - Thomas Van De Crommenacker*/
 /********************************Basic Page Styling*************************/
+/*
+
+    Due to a time restrictions I have included my static web pages' CSS files
+    A lot of the classes and id are unused or rewritten. This will be refactored if 
+    this project continues post final exam time.  
+
+*/
 header {
     margin-bottom: 4.5em;
 }
@@ -7,9 +14,20 @@ nav {
     opacity: 0.85;
     font-family: 'Comfortaa', cursive, sans-serif;
 }
+body {
+    overflow: auto;
+    padding-bottom: 10px;
+    /*background-color: rgba(0, 0, 0, 0.411);*/
+    background-color: #E2D0B3;
+}
 footer{
     display:flex;
     justify-content: center;
+    position: relative;
+    margin-top: 1em;
+    /* negative value of footer height */
+    height: 180px;
+    clear: both;
 }
 main {
     display:flex;
@@ -20,3 +38,17 @@ main {
     margin-bottom:20px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+#nav-bar {
+    margin-bottom:2em;
+}
+
+.admin-tag {
+    background-color: rgba(255, 217, 0, 0.671);
+    border-radius: 0.2em;
+    color:white;
+    padding:0.1em;
+    margin:0.5em;
+}
